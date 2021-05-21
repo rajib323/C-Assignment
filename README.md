@@ -1,3 +1,8 @@
+
+![](https://github.com/adi323/C-Assignment/blob/main/banner-1200x628.60a7d9b2aae2e.jpg)
+
+
+
 # C-Assignment
 GNIT C Assignment
 <br />
