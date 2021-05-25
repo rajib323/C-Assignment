@@ -2,36 +2,23 @@
 int main()
 {
   int n;
-  char ch;
-
+  int z=1;
   printf("Enter number of lines: ");
   scanf("%d",&n);
-
-  for(int i=0; i<=n; i++)
+  for(int i=0; i<n; i++)
   {
-    ch = 'A';
-    for(int j=0; j<=n-i; j++, ch++)
-    {
-      printf("%c",ch);
-    }
-
     if(i==0)
-    {
-      printf("%c",ch);
-    }
-    else
-    {
-      for(int k=0; k<(2*i)+1; k++){
+      for(int j=0;j<n+2;j++)
+        printf("*");
+    else{
+      for(int j=0;j<(n+2-z)/2;j++)
+        printf("*");
+      for(int j=0;j<z;j++)
         printf(" ");
-      }
+      for(int j=0;j<(n+2-z)/2;j++)
+        printf("*");
+      z=z+2;
     }
-
-    ch--;
-    for(int j=0; j<=n-i; j++, ch--)
-    {
-      printf("%c",ch);
-    }
-
     printf("\n");
   }
   return 0;

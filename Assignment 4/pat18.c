@@ -1,25 +1,28 @@
 #include<stdio.h>
 int main()
 {
-  int n;
-  int z=1;
+  int r,n,c;
+
   printf("Enter number of lines: ");
   scanf("%d",&n);
-  for(int i=0; i<n; i++)
+
+  for(r=1;r<=n;r++)
   {
-    if(i==0)
-      for(int j=0;j<n+2;j++)
-        printf("*");
-    else{
-      for(int j=0;j<(n+2-z)/2;j++)
-        printf("*");
-      for(int j=0;j<z;j++)
-        printf(" ");
-      for(int j=0;j<(n+2-z)/2;j++)
-        printf("*");
-      z=z+2;
-    }
+    for(c=1;c<=n-r+1;c++)
+    printf("%c",c+64);
+
+
+    if(r==1)
+    printf("\b");
+
+    for(c=1;c<=2*r-3;c++)
+    printf(" ");
+
+    for(c=1;c<=n-r+1;c++)
+    printf("%c",n-r-c+2+64);
+
     printf("\n");
   }
+
   return 0;
 }
