@@ -1,10 +1,10 @@
 #include <stdio.h>
-void fact(int f,int a, int b){
+void fibo(int f,int a, int b){
     if(f==1)
         printf(" %d",a);
     else{
         printf(" %d",a);
-        fact(f-1,b,(a+b));
+        fibo(f-1,b,(a+b));
     }
 }
 int main(){
@@ -12,5 +12,5 @@ int main(){
     printf("Enter a number : ");
     scanf("%d",&n);
     printf("Fibonacci : ");
-    fact(n,0,1);
+    fibo(n,0,1);
 }
