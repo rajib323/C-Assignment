@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 int main(){
     int arr[10];
     int n,c=0,s;
