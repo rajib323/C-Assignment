@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 int main(){
     int arr[10];
     int n,c=0,s;
@@ -12,7 +11,7 @@ int main(){
     }
     
     for(int i=0;i<n-1;i++){
-        for(int j=i;j<n-i-1;j++)
+        for(int j=0;j<n-i-1;j++)
         {
             if(arr[j]>arr[j+1]){
                 int tmp=arr[j+1];
@@ -21,7 +20,7 @@ int main(){
             }
         }
     }
-    
+    printf("\nSorted array : ");
     for(int i=0;i<n;i++)
         printf("%d ",arr[i]);
 }

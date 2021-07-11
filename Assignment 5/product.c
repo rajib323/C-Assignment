@@ -1,5 +1,5 @@
 #include <stdio.h>
-float product(float,int);
+float product(float a,int b);
 int main(){
     int n;
     float v;

@@ -1,15 +1,16 @@
 #include<stdio.h>
-#define max 5
 int main(){
-    int arr[max];
-    for(int i=0;i<max;i++){
+    int arr[10],n;
+    printf("Enter size : ");
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
         printf("Enter a element : ");
         scanf("%d",&arr[i]);
     }
-    int res=0;
-    for(int i=0;i<max;i++)
+    int odd=0;
+    for(int i=0;i<n;i++)
         if(arr[i]%2==0)
-            res++;
-    printf("\nEven nos : %d",res);
-    printf("\nEven nos : %d",max-res);
+            odd++;
+    printf("\nEven nos : %d",odd);
+    printf("\nOdd nos : %d",n-odd);
 }
