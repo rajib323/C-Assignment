@@ -2,7 +2,7 @@
 int main()
 {
     int arr[10][10],i,j,max,m,n;
-    max=arr[0][0];
+
     printf("Enter m and n : ");
     scanf("%d %d",&m,&n);
 
@@ -18,7 +18,7 @@ int main()
                     
         }
     }
-          
+    max=arr[0][0];
     // logic for finding maximum element
     for(i=0;i<m;i++)
     {
